@@ -1,0 +1,59 @@
+.bookCard {
+    background-color: var(--white);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+    animation: fadeIn 0.5s ease forwards;
+    box-sizing: border-box;
+  }
+  
+  .bookCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .bookCover {
+    position: relative;
+    overflow: hidden;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    background-color: var(--gray-100);
+  }
+  
+  .coverImage {
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+  }
+  
+  .bookCard:hover .coverImage {
+    transform: scale(1.05);
+  }
+  
+  .quickViewButton {
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: var(--white);
+    padding: 0.5rem;
+    text-align: center;
+    transition: var(--transition);
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-family: inherit;
+  }
+  
+  .bookCard:hover .quickViewButton {
+    bottom: 0;
+  }
+  
+  .bookInfo {
+    padding: 1.5rem;
+    position: relative;
+    box-sizing: border-box;
+  }
